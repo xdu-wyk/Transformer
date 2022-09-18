@@ -255,4 +255,4 @@ def make_model(src_vocab, tgt_vocab, N=6,
 if __name__ == '__main__':
     model = make_model(10, 10, 2)
     a = torch.tensor([[1, 2, 3, 4, 5], [0, 7, 8, 9, 6]]).view(2, 5)
-    print(model.generator(model.forward(a, a, None, None)).shape)
+    print(model.generator(model.forward(a, a, None, None)))
